@@ -2,10 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package coneccion_base_de_datos;
-import java.sql.*;
+package conneccion_co_base_de_datos;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 /**
  *
@@ -19,7 +24,7 @@ public class Coneccion_Base_De_Datos {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        String usuario = "root";
+         String usuario = "root";
         String password = "Mmcode1234";
         String url = "jdbc:mysql://localhost:3307/servicio_al_cliente";
         Connection conexion;
@@ -79,8 +84,6 @@ public class Coneccion_Base_De_Datos {
         } catch (SQLException ex) {
             Logger.getLogger(Coneccion_Base_De_Datos.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
     }
     
 }
