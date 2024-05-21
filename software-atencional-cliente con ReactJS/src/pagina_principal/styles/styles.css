@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6FA8DC;
+  }
+  
+  header {
+    background-color: #6AA84F;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+  }
+
+  header .logo img {
+    width: 20px;
+    height: auto; 
+  }
+  
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar {
+    background-color: #f5f5f5;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 30px;
+    border: 1px solid #6AA84F;
+    
+    
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main {
+    margin-left: 210px; 
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  main h1 {
+    color: white; 
+    text-align: center; 
+    
+}
+
+main p {
+
+    color: white;
+    text-align: justify;
+    
+}
+
+main h2 {
+
+    color: white;
+     
+}
+  
+  
+  form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6AA84F;
+    
+    
+   
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6AA84F;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #6AA84F;
+  }
+  
+  footer {
+    background-color: #6AA84F;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+    
+  }
