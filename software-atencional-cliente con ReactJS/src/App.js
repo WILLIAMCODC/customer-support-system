@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-
 import React from 'react';
+import './App.css';
 import Header from './pagina_principal/Header';
 import Sidebar from './pagina_principal/Sidebar';
 import Main from './pagina_principal/Main';
@@ -18,6 +16,5 @@ function App() {
   );
 }
 
-
-
 export default App;
+

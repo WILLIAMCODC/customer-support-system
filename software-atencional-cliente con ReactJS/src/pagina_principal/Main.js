@@ -16,14 +16,14 @@ function Main() {
       }
     }
 
-    // Agregar el event listener al montar el componente
+   
     document.getElementById("contactForm").addEventListener("submit", handleSubmit);
 
-    // Limpiar el event listener al desmontar el componente
+    
     return () => {
       document.getElementById("contactForm").removeEventListener("submit", handleSubmit);
     };
-  }, []); // El segundo argumento de useEffect es un array vacío para que se ejecute solo una vez al montar el componente
+  }, []); 
 
   return (
     <main>
