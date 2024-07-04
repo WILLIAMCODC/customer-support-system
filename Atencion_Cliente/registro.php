@@ -11,7 +11,7 @@ if (isset($_POST["enviar"]) && $_POST["enviar"] == "si") {
     $usu_pass = $_POST['usu_pass'];
 
     $usuario = new Usuario();
-    // Aquí debes pasar las variables correctas a la función register
+    
     $usuario->register($usu_nom,  $usu_ape, $usu_correo,  $usu_pass);
 }
 ?>

@@ -34,12 +34,15 @@ if(isset($_SESSION["usu_id"])){
 </div>
 </header>
 <div class="box-typical box-typical-padding">
+    
+    <input type="hidden" id="user_id" value="<?php echo $_SESSION['usu_id']; ?>">
+    
     <table id="ticket_data" class="table table-bordered table-stiped table-vcenter js-dataTable-full">
         <thead>
             <tr>
                 <th style="width: 10%;">#Ticket</th>
-                <th style="width: 15;">Categoria</th>
-                <th class="d-none d-sm-table-cell" styles="width: 25%">Titulo</th>
+                <th style="width: 15%;">Categoria</th>
+                <th class="d-none d-sm-table-cell" style="width: 25%;">Titulo</th>
                 <th class="text-center" style="width: 15%;"></th>
                 
             </tr>
@@ -58,7 +61,6 @@ if(isset($_SESSION["usu_id"])){
 <?php 
 } else {
     header("Location: ".Conectar::ruta()."index.php");
-   
+    exit();
 }
-
 ?>
